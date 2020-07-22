@@ -9,4 +9,8 @@ const clients = [
 
 const listClientsIds = () => {
   // your code here
+  let ids = clients.map(x => x.id);
+  return ids
 };
+
+console.log(listClientsIds())
