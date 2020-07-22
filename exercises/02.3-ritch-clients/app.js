@@ -46,4 +46,11 @@ const banks = [
 
 function richClientsBalances() {
     // your code here
+    let one = banks.map(x => x.id)
+    boa = one[0]
+    
+    let acct = accounts.map(x => x.bankId)
+    return acct
 }
+
+console.log(richClientsBalances())
