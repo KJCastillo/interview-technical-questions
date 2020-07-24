@@ -35,24 +35,19 @@ const clients = [
 
 // 🇺🇸 Array with the client name, sorted decreasing by the total balance in all its banks
 function sortClientsTotalBalances() {
-  let cID = clients.map(x => x.id)
+  
+let sum = 0
+let bal = accounts.map(x => x.balance)
+let cID = accounts.map(x => x.clientId)
 
-//   accounts.sort(function (a,b){
-//       if (a.clientId > b.clientId){
-//         return 1
-//       } else if (a.clientId < b.clientId){
-//           return -1
-//       } return 0
-//   })
+for (let x in cID){
+    for (let i in bal){
+        if (cID[x] === 6){
+            sum += bal[i]
+        }
+    }
+} return sum
 
-// return accounts
-
-// let names = []
-// names.push(clients.map(x => x.name))
-// return names
-
-for (let i=0; i<accounts.length; ){}
-
-}
+} //50,400
 
 console.log(sortClientsTotalBalances())
