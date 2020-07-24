@@ -34,9 +34,25 @@ const clients = [
 ];
 
 // 🇺🇸 Array with the client name, sorted decreasing by the total balance in all its banks
-// 🇪🇸 Arreglo con los nombres de cliente ordenados de mayor a menor por la suma TOTAL de los saldos de cada cliente en los bancos que participa.
 function sortClientsTotalBalances() {
-    
+  let cID = clients.map(x => x.id)
+
+//   accounts.sort(function (a,b){
+//       if (a.clientId > b.clientId){
+//         return 1
+//       } else if (a.clientId < b.clientId){
+//           return -1
+//       } return 0
+//   })
+
+// return accounts
+
+// let names = []
+// names.push(clients.map(x => x.name))
+// return names
+
+for (let i=0; i<accounts.length; ){}
+
 }
 
 console.log(sortClientsTotalBalances())
