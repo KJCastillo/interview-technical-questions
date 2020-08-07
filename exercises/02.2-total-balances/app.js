@@ -41,6 +41,8 @@ function sortClientsTotalBalances() {
         for (let x of f) { total += x.balance }
         return { name: e.name, balance: total }
     })
-    return array
+    return array.sort(function (a, b) {
+  return b.balance - a.balance;
+});
 }
 console.log(sortClientsTotalBalances())
